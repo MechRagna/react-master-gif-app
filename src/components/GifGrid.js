@@ -9,7 +9,7 @@ export const GifGrid = ({ category }) => {
   return (
     <>
       <h3>{category}</h3>
-      { loading && <p>Loading...</p> }
+      {loading && <p>Loading...</p>}
       <div className="card-grid">
         {data.map((img) => (
           <GifGridItem key={img.id} {...img} />
@@ -20,5 +20,5 @@ export const GifGrid = ({ category }) => {
 };
 
 GifGrid.propTypes = {
-  category: PropTypes.string,
+  category: PropTypes.string.isRequired,
 };

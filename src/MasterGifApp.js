@@ -2,9 +2,10 @@
 import React, { useState } from "react";
 import { AddCategory } from "./components/AddCategory";
 import { GifGrid } from "./components/GifGrid";
+import PropTypes from "prop-types";
 
-export const MasterGifApp = () => {
-  const [categories, setCategories] = useState([]);
+export const MasterGifApp = ({ defaultCategories }) => {
+  const [categories, setCategories] = useState(defaultCategories);
 
   return (
     <>
@@ -19,4 +20,12 @@ export const MasterGifApp = () => {
       </ol>
     </>
   );
+};
+
+MasterGifApp.propTypes = {
+  defaultCategories: PropTypes.array,
+};
+
+MasterGifApp.defaultProps = {
+  defaultCategories: [],
 };

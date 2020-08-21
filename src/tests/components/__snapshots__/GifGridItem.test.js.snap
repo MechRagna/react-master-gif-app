@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Validaciones de GifGridItem Validar que se vea bien el componente  1`] = `
+<div
+  className="card animate__animated animate__backInUp"
+>
+  <img
+    alt="Titulo de prueba"
+    src="http://localhost/test.gif"
+  />
+  <p>
+    Titulo de prueba
+  </p>
+</div>
+`;
